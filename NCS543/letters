@@ -1,0 +1,51 @@
+#!/bin/sh
+
+# set up file
+if [ -f txt.orig ]
+then
+    tr [:lower:] [:upper:] < txt.orig > txt
+else
+    echo "can't find input file"
+    exit 1
+fi
+
+cat txt | sed 's/N/e/g' > out; mv out txt
+cat txt | sed 's/Y/t/g' > out; mv out txt
+cat txt | sed 's/V/a/g' > out; mv out txt
+
+#cat txt | sed 's/T/h/g' > out; mv out txt
+#cat txt | sed 's/X/o/g' > out; mv out txt
+#cat txt | sed 's/Q/n/g' > out; mv out txt
+#cat txt | sed 's/M/i/g' > out; mv out txt
+#cat txt | sed 's/H/h/g' > out; mv out txt
+#cat txt | sed 's/E/y/g' > out; mv out txt
+
+#cat txt | sed 's/U/i/g' > out; mv out txt
+
+#cat txt | sed 's/M/o/g' > out; mv out txt
+#cat txt | sed 's/U/i/g' > out; mv out txt
+#cat txt | sed 's/Q/n/g' > out; mv out txt
+#cat txt | sed 's/X/s/g' > out; mv out txt
+#cat txt | sed 's/H/h/g' > out; mv out txt
+#cat txt | sed 's/T/r/g' > out; mv out txt
+#cat txt | sed 's/I/d/g' > out; mv out txt
+#cat txt | sed 's/P/l/g' > out; mv out txt
+#cat txt | sed 's/A/u/g' > out; mv out txt
+#cat txt | sed 's/C/c/g' > out; mv out txt
+#cat txt | sed 's/L/m/g' > out; mv out txt
+#cat txt | sed 's/G/w/g' > out; mv out txt
+#cat txt | sed 's/Z/f/g' > out; mv out txt
+#cat txt | sed 's/B/y/g' > out; mv out txt
+#cat txt | sed 's/R/g/g' > out; mv out txt
+#cat txt | sed 's/E/p/g' > out; mv out txt
+#cat txt | sed 's/F/b/g' > out; mv out txt
+#cat txt | sed 's/D/v/g' > out; mv out txt
+#cat txt | sed 's/S/k/g' > out; mv out txt
+#cat txt | sed 's/J/x/g' > out; mv out txt
+#cat txt | sed 's/K/j/g' > out; mv out txt
+#cat txt | sed 's/W/q/g' > out; mv out txt
+#cat txt | sed 's/O/q/g' > out; mv out txt
+
+
+
+
